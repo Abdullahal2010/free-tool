@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #ddd;
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(120deg, rgb(115, 115, 123), rgb(169, 151, 221));
+  border-bottom: 2px solid rgb(34, 31, 31);
+  border-top: 2px solid rgb(34, 31, 31);
+  padding: 10px 5px;
+}
+
+.title-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+  background: linear-gradient(120deg, blue, red);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.toogle-div {
+  display: flex;
+  font-size: 1rem;
+  align-items: center;
+}
+
+.toogle-div ul {
+  list-style-type: none;
+  display: flex;
+  font-size: 1rem;
+  align-items: center;
+  background-color: rgb(146, 192, 146);
+  border: 2px solid #ddd;
+  border-radius: 5px;
+}
+
+.toogle-div ul li {
+  padding: 3px 5px;
+  border-right: 2px solid #ddd;
+  cursor: pointer;
+}
+
+.toogle-div ul li:hover {
+  background-color: rgb(137, 222, 137);
+}
+
+.active {
+  background-color: rgb(47, 57, 47);
+  color: white;
+  border-radius: 5px;
+}
+
+.active:hover {
+  background-color: rgb(86, 96, 86) !important;
+}
+
+.toogle-div ul :nth-child(3) {
+  border-right: none;
+}
+
+.form-div div {
+  padding: 10px;
+  border: 2px solid white;
+  width: 300px;
+  margin: 10px auto;
+  border-radius: 5px;
+  display: none;
+}
+
+.shown {
+  display: block !important;
+}
+
+.form-div div h3 {
+  border-bottom: 2px solid white;
+  text-align: center;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+}
+
+.form-div div form input {
+  width: 100%;
+  border: none;
+  padding: 5px;
+  margin: 5px 0;
+  border-radius: 5px;
+  border: 2px solid rgb(191, 180, 180);
+}
+
+.form-div div form button {
+  display: block;
+  width: 100px;
+  margin: auto;
+  padding: 5px 20px;
+  display: flex;
+  justify-content: center;
+  border: 2px solid rgb(121, 121, 165);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form-div div form button:hover {
+  background-color: #ddd;
+}
+
+.about-div {
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid gray;
+  background-color: rgb(207, 220, 242);
+  border-radius: 5px;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
